@@ -4,9 +4,12 @@ var sneakyVar = "I was hoisted!";
 function testVar() {
     if(true) {
         var insideIf = "I am inside if block";
+        let insideIfLet = "I am inside if block";
+
     }
 
     console.log(insideIf); // I am inside if block
+    console.log(insideIfLet); // ReferenceError: insideIfLet is not defined
 }
 
 testVar(); 

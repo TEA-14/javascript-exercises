@@ -9,12 +9,16 @@ function increment() {
     //local variable declared with let
     let step = 1;
    //increment the global variable
-    counter += step;
-    console.log('Counter after increment:', counter);
-
+   while(true) {
     if(counter > maxCount) {
         console.log('Counter exceeded the max count');
+        break;
     }
+    counter += step;
+    console.log('Counter after increment:', counter);
+   }
+
+   
     
 }
 
